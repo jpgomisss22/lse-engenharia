@@ -1,0 +1,125 @@
+.header {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 40px;
+  height: 96px;                 /* MAIS ALTURA */
+  background: rgba(255,255,255,0.96);
+  border-radius: 24px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.10);
+  z-index: 1000;
+}
+
+.header__content {
+  max-width: 1240px;
+  margin: 0 auto;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.hero {
+  padding-top: 220px;
+  padding-bottom: 140px;
+  background: #f7f9fb;
+  position: relative;
+  z-index: 1;
+}
+
+.hero__content {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 96px;
+  align-items: center;
+}
+
+.about {
+  padding: 140px 0;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  padding: 80px 0;
+}
+
+.about__content {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: grid;
+  grid-template-columns: 520px 1fr;
+  gap: 64px;
+  align-items: stretch;
+}
+
+.services {
+  padding: 140px 0;
+  background: #f9fafb;
+}
+
+.services__content {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.services__title {
+  font-size: 2.6rem;
+  line-height: 1.2;
+  margin: 16px 0 24px;
+}
+
+.services__title span {
+  color: var(--accent);
+}
+
+.services__description {
+  max-width: 560px;
+  color: #555;
+  margin-bottom: 72px;
+}
+
+@media (max-width: 1024px) {
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .services {
+    padding: 80px 0;
+  }
+
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer {
+  background:var(--primary);
+  color:white;
+  padding:80px;
+}
+
+.nav__cta {
+  margin-left: 16px;               /* separação sutil */
+  padding: 12px 22px;
+  border-radius: 14px;
+  background: rgba(242, 140, 40, 0.15);
+  color: #2c2c2c;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav__cta:hover {
+  background: #F28C28;
+  color: #fff;
+  transform: translateY(-1px);
+}
